@@ -1,0 +1,144 @@
+:root {
+    --bg: #ECECEC;
+    --white: #FCFAFA;
+    --pink: #ECCACB;
+    --dark: #3B3B3B;
+}
+
+body {
+    background: var(--bg);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: var(--dark) !important;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+}
+
+.nav-link {
+    color: var(--white) !important;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.btn-dark {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: var(--white);
+}
+
+.btn-dark:hover {
+    background: var(--pink);
+    border-color: var(--pink);
+    color: var(--dark);
+}
+
+.btn-outline-light:hover {
+    background: var(--pink);
+    border-color: var(--pink);
+    color: var(--dark);
+}
+
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.auth-card {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.slider-img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    background: rgba(59,59,59,0.6);
+    border-radius: 8px;
+    padding: 15px 25px;
+}
+
+.carousel-caption h3 {
+    color: #fff;
+}
+
+.carousel-caption p {
+    color: var(--white);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--white) !important;
+    border: 2px solid var(--dark);
+}
+
+.carousel-indicators button.active {
+    background: var(--pink) !important;
+    border-color: var(--pink);
+}
+
+.badge-status {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.badge-new {
+    background: #d4c5c6;
+    color: var(--dark);
+}
+
+.badge-progress {
+    background: #b8a9aa;
+    color: #fff;
+}
+
+.badge-done {
+    background: var(--pink);
+    color: var(--dark);
+}
+
+.footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section-title {
+    border-bottom: 3px solid var(--pink);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .slider-img {
+        height: 250px;
+    }
+    .auth-card {
+        padding: 20px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-img {
+        height: 200px;
+    }
+}
